@@ -1,0 +1,58 @@
+package ejemploCajaNegra1;
+
+import java.util.Scanner;
+
+public class EjemploCajaNegra1 {
+	
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.print("Introduce para la edad un número mayor que 18 y menor que 65:  ");
+		int num = entrada.nextInt();
+		System.out.print(CompruebaEdadCorrecta(num));
+		
+		System.out.print("Introduce para el DNI una cadena con 8 números y una letra al final:  ");
+		String dni = entrada.nextString();
+		System.out.print(CompruebaDNICorrecto(dni));
+		
+		System.out.print("Introduce para la nacionalidad una palabra:  ");
+		String nacionalidad = entrada.nextLong();
+		System.out.print(CompruebaNacionalidadCorrecta(nacionalidad));
+	}
+
+	
+	private static char[] CompruebaNacionalidadCorrecta(String nacionalidad) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	private static char[] CompruebaDNICorrecto(String dni) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	private static char[] CompruebaDNICorrecto(String dni) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	static int CompruebaEdadCorrecta(int num) {
+		int divisor = 1, sumadivisores = 0;
+		String Cadena = "";
+		while (divisor <= num / 2) {
+			if (num % divisor == 0) {
+				sumadivisores += divisor;
+			}
+			divisor++;
+		}
+		if (num == sumadivisores) {
+			Cadena = "El número " + num + " es un número perfecto";
+
+		} else {
+			Cadena = "El número " + num + " no es un número perfecto";
+		}
+		return Cadena;
+	}
+}

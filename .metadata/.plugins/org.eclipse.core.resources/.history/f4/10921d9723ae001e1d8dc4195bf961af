@@ -1,0 +1,15 @@
+package RestauranteIsrael;
+
+/**
+ * la Clase retsuranteisrael gestiona los comensales del restaurante Israel y el stock de su almacen
+ * 
+ * @author laura Villar
+ * 
+ * @version 1.0
+ */
+
+
+public class Restauranteisrael {
+	
+	
+}

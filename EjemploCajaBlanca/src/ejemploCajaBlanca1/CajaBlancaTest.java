@@ -1,0 +1,112 @@
+package ejemploCajaBlanca1;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class CajaBlancaTest {
+	
+	/*instancio un objeto tipo cajaBlancaTest(clase)*/
+	CajaBlancaTest cajaBlancaTest = new CajaBlancaTest ();
+	
+	
+	/*tengo que pasar los 4 caminos de la tabla de la hoja 38 del pdf*/
+	
+	@Test
+	/*los metodos tienen que llamarse distinto!!! no puedo todos "test" nada mas que sean descriptivos*/
+	void testCompruebaNumeroNegativo() { 
+		
+		//fail("Not yet implemented");
+		
+		System.out.println("Ejecuto el Test Comprueba Número Perfecto");
+		
+		String resultadoEsperado="El número -2 no es un número perfecto";
+		
+		//String resultadoObtenido=28;//y aqui llamo a un metodo
+		
+		String resultadoObtenido=EjemploCajaBlanca1.CompruebaNumeroPerfecto(-2);
+		
+		
+		
+		assertEquals(resultadoEsperado, resultadoObtenido);
+		//pero esto es trampa, tengo que llamar a Calculadora arriba
+		
+	
+	}//AQUI ACABA mi test para comprobar numero negativo
+	
+	
+	@Test
+	/*los metodos tienen que llamarse distinto!!! no puedo todos "test" nada mas que sean descriptivos*/
+	void testCompruebaNumeroNoDivisible() { 
+		
+		//fail("Not yet implemented");
+		
+		System.out.println("Ejecuto el Test Comprueba Número Perfecto");
+		
+		String resultadoEsperado="El número " + num + " no es un número perfecto";
+		
+		//String resultadoObtenido=28;//y aqui llamo a un metodo
+		
+		String resultadoObtenido=cajaBlancaTest.CompruebaNumeroNoDivisible(8);
+		
+		
+		assertEquals(resultadoEsperado, resultadoObtenido);
+		//pero esto es trampa, tengo que llamar a Calculadora arriba
+		
+	
+	}//AQUI ACABA mi test para comprobar numero NoDivisible
+	
+	
+	@Test
+	/*los metodos tienen que llamarse distinto!!! no puedo todos "test" nada mas que sean descriptivos*/
+	void testCompruebaNumeroPositivo() { 
+		
+		//fail("Not yet implemented");
+		
+		System.out.println("Ejecuto el Test Comprueba Número Perfecto");
+		
+		String resultadoEsperado="El número " + num + " es un número perfecto";
+		
+		//String resultadoObtenido=28;//y aqui llamo a un metodo
+		
+		String resultadoObtenido=cajaBlancaTest.CompruebaNumeroPositivo(28);
+		
+		
+		assertEquals(resultadoEsperado, resultadoObtenido);
+		//pero esto es trampa, tengo que llamar a Calculadora arriba
+		
+	
+	}//AQUI ACABA mi test para comprobar numero perfecto
+	
+	
+	
+	
+	
+	
+	
+	
+	@BeforeAll
+	public static void testBeforeAll() {
+		System.out.println("Ejecuto Test BeforeAll()");
+	}
+	
+	@BeforeEach
+	public void testBeforeEach() {
+		System.out.println("Ejecuto BeforeEach()");
+	}
+	
+	@AfterEach
+	public void afterEach() {
+	System.out.println("Ejecuto AfterEach()");
+	}
+	
+	@AfterAll
+	public static void testAfterall() {
+	System.out.println("Ejecuto AfterAll()"); 
+	}
+
+}

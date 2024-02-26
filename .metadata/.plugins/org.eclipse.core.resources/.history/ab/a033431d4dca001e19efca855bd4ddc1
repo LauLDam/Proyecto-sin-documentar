@@ -1,0 +1,37 @@
+package ejemploCajaBlanca1;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CajaBlancaTest1 {
+
+	/*instancio un objeto tipo cajaBlancaTest(clase)*/
+	EjemploCajaBlanca1 cajaBlancaTest = new EjemploCajaBlanca1 ();
+	
+	
+	/*tengo que pasar los 4 caminos de la tabla de la hoja 38 del pdf*/
+	
+	@Test
+	/*los metodos tienen que llamarse distinto!!! no puedo todos "test" nada mas que sean descriptivos*/
+	void testCompruebaNumeroNegativo() { 
+		
+		//fail("Not yet implemented");
+		
+		System.out.println("Ejecuto el Test Comprueba Número Perfecto");
+		
+		String resultadoEsperado="El número -2 no es un número perfecto";
+		
+		//String resultadoObtenido=28;//y aqui llamo a un metodo
+		
+		String resultadoObtenido=cajaBlancaTest.CompruebaNumeroPerfecto(-2);
+		
+		
+		
+		assertEquals(resultadoEsperado, resultadoObtenido);
+		//pero esto es trampa, tengo que llamar a Calculadora arriba
+		
+	
+	}
+
+}

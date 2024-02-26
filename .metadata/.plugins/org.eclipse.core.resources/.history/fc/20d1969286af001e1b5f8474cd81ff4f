@@ -1,0 +1,33 @@
+package RestauranteIsrael;
+
+/**
+ * la Clase retsuranteisrael gestiona los comensales del restaurante Israel y el stock de su almacen
+ * 
+ * @author laura Villar
+ * 
+ * @version 1.0
+ */
+
+
+public class RestauranteIsrael {
+	
+	/**
+	 * Representa la cantidad de patatas 
+	 */
+	
+	public int patatas;
+	
+	
+	private int calamares; //Representa la cantidad de calamares  //es privado al haber hecho getters y setters y no es /**
+	
+	private static RestauranteIsrael miRestaurante; //ES PRIVADO NO SE COMENTA!!!
+	
+	/**
+	 * Constructor de la clase Restaurante Israel  con dos parametros de entrada
+	 * 
+	 * @param a representa  la Q de `patatas inicialles
+	 *  @param b representa  la Q de calamares inicilaes
+	 */
+	
+	
+}
